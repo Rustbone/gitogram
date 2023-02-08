@@ -1,0 +1,39 @@
+.stories {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.icon {
+  width: 25px;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+}
+
+.feeds {
+  &__list {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.feed {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.topline {
+  margin-bottom: 32px;
+}

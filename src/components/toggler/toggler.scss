@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: none;
+
+  .text {
+    margin-right: 4px;
+  }
+
+  
+
+  &.active .icon {
+    
+     transform: rotate(0deg);
+    
+  }
+}
+
+.icon {
+  width: 10px;
+  transform: rotate(180deg);
+  transition: 0.3s;
+}

@@ -1,0 +1,33 @@
+.username {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatar {
+  width: 92px;
+  height: 92px;
+  border: 2px solid #A6328D;
+  position: relative;
+  border-radius: 50%;
+  bottom: 8px;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 50%;
+}
+
+.c-story-user-item {
+  border: none;
+  background: none;
+}
+
+.button {
+  font-family: 'Inter';
+}
