@@ -16,7 +16,7 @@
       <!---->
       <toggler @onToggle="showComment" class="mb-12" />
       <ul v-if="isShowComments" class="feed__comment_list">
-        <li class="feed__comment_item comment" v-for="elem in 5" :key="elem">
+        <li class="feed__comment_item comment" v-for="item in 5" :key="item">
          <!---->
          <comment username="Test" text="vdhvaalbg"/>
         </li>
@@ -80,7 +80,5 @@ export default {
     margin-bottom: 10px;
   }
 }
-.mb-12 {
-  margin-bottom: 12px;
-}
+
 </style>

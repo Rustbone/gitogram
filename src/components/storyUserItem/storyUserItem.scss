@@ -12,6 +12,10 @@
   position: relative;
   border-radius: 50%;
   bottom: 8px;
+
+  &:hover {
+    border: transparent;
+  }
 }
 
 .img {

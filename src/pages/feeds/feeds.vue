@@ -7,6 +7,9 @@
         <div class="icon">
           <icon name="home" />
         </div>
+        <template>
+          <avatar />
+        </template>
         <div class="icon">
           <icon name="exit" />
         </div>
@@ -45,6 +48,7 @@ import { topline } from '../../components/topline'
 import { icon } from '../../icons'
 import { storyUserItem } from '../../components/storyUserItem'
 import stories from './data.json'
+import { avatar } from '../../components/avatar'
 
 import { feed } from '../../components/feed'
 import { card } from '../../components/card'
@@ -52,7 +56,7 @@ import { card } from '../../components/card'
 export default {
   name: 'feeds',
   components: {
-    topline, icon, storyUserItem, feed, card
+    topline, icon, storyUserItem, feed, card, avatar
   },
   data () {
     return {
