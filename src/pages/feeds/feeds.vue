@@ -4,12 +4,13 @@
     <template #headline>
       <h1>Gitogram /</h1>
       <div class="icon-list">
-        <div class="icon">
+        <div class="icon mr-28">
           <icon name="home" />
         </div>
-        <template>
-          <avatar />
-        </template>
+        <avatar class="mr-24"
+        avatar="https://picsum.photos/300/300"
+        style="width: 37px; height: 37px;"
+        />
         <div class="icon">
           <icon name="exit" />
         </div>

@@ -9,9 +9,11 @@
   width: 92px;
   height: 92px;
   border: 2px solid #A6328D;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  bottom: 8px;
+  overflow: hidden;
 
   &:hover {
     border: transparent;
@@ -21,9 +23,6 @@
 .img {
   width: 80px;
   height: 80px;
-  position: absolute;
-  top: 6px;
-  left: 6px;
   border-radius: 50%;
 }
 
