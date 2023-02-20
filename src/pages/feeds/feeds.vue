@@ -42,6 +42,15 @@
       </feed>
     </li>
   </ul>
+
+  <ul class="list">
+    <li class="item" v-for="item in items" :key="item.id">
+      <test
+        :test="getTestData(item)"
+        dark/>
+    </li>
+  </ul>
+  <pre>{{ items }}</pre>
 </template>
 
 <script>
@@ -54,14 +63,36 @@ import { avatar } from '../../components/avatar'
 import { feed } from '../../components/feed'
 import { card } from '../../components/card'
 
+import * as api from '../../api'
+import { test } from '../../components/test'
+
 export default {
   name: 'feeds',
   components: {
-    topline, icon, storyUserItem, feed, card, avatar
+    topline, icon, storyUserItem, feed, card, avatar, test
   },
   data () {
     return {
+      items: [],
       stories
+    }
+  },
+  methods: {
+    getTestData (item) {
+      return {
+        title: item.name,
+        description: item.description,
+        username: item.owner.login,
+        stars: item.stargazers_count
+      }
+    }
+  },
+  async created () {
+    try {
+      const { data } = await api.trandings.getTrendings()
+      this.items = data.items
+    } catch (error) {
+      console.log(error)
     }
   }
 }

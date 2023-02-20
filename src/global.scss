@@ -1,6 +1,12 @@
+:root {
+  --z-active-slider: 10;
+  --grey: #404040;
+  --green: #31AE54;
+  --borders: #D3D3D3;
+  --lightGray: #9E9E9E;
+}
 body, html {
   height: 100%;
-  font-family: 'Inter';
 }
 
 body {
@@ -19,13 +25,9 @@ body {
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
-}
-
-li {
-  list-style: none;
 }
 
 img {
